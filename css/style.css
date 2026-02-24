@@ -69,7 +69,7 @@ header .container {
 
 /* LOGO plus grand mais contenu dans la hauteur */
 .logo {
-    height: 150px;   /* ← plus grand */
+    height: 120px;   /* ← plus grand */
     transform: translateY(10px); /* ajuste visuellement sans agrandir la bande */
     transition: 0.3s ease;
 }
