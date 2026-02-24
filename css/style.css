@@ -131,3 +131,47 @@ footer {
         font-size: 1.6rem;
     }
 }
+/* ===== SERVICES CARDS ===== */
+
+.services-preview {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services-preview h2 {
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+/* ===== ZONE ===== */
+
+.zone {
+    background: var(--primary);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
