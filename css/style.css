@@ -175,3 +175,36 @@ footer {
     padding: 60px 0;
     text-align: center;
 }
+/* ===== FOOTER FIX ===== */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+/* ===== TARIFS ===== */
+
+.tarif-box {
+    background: #f5f5f5;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.tarif-box h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
