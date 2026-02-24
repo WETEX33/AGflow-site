@@ -48,33 +48,34 @@ main {
 }
 
 /* ============================= */
-/* HEADER VERSION PLUS IMPACTANTE */
+/* HEADER OPTIMISÉ */
 /* ============================= */
 
 header {
     background: white;
-    padding: 28px 0;
     border-bottom: 1px solid #eaeaea;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+/* Conteneur plus compact */
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 110px;   /* ← Hauteur contrôlée ici */
 }
 
-/* LOGO */
-
+/* LOGO plus grand mais contenu dans la hauteur */
 .logo {
-    height: 120px;   /* ← on double quasiment */
+    height: 150px;   /* ← plus grand */
+    transform: translateY(10px); /* ajuste visuellement sans agrandir la bande */
     transition: 0.3s ease;
 }
 
 .logo:hover {
-    transform: scale(1.05);
+    transform: translateY(10px) scale(1.05);
 }
 
 /* NAVIGATION */
@@ -82,16 +83,16 @@ header .container {
 nav {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 nav a {
     text-decoration: none;
     color: var(--dark);
     font-weight: 600;
-    font-size: 1.2rem;   /* ← plus grand */
-    padding: 12px 22px;
-    border-radius: 10px;
+    font-size: 1.25rem;   /* encore un peu plus lisible */
+    padding: 8px 16px;    /* réduit le padding vertical */
+    border-radius: 8px;
     transition: 0.3s ease;
 }
 
