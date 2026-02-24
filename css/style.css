@@ -1,24 +1,45 @@
-/* ===== RESET ===== */
+/* ============================= */
+/* RESET */
+/* ============================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== VARIABLES ===== */
+/* ============================= */
+/* VARIABLES */
+/* ============================= */
+
 :root {
     --primary: #1f6fb2;
+    --primary-dark: #155a92;
     --dark: #222;
     --light: #ffffff;
     --gray: #f5f5f5;
 }
 
-/* ===== GLOBAL ===== */
+/* ============================= */
+/* GLOBAL LAYOUT */
+/* ============================= */
+
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--light);
     color: var(--dark);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 60px 0;
 }
 
 .container {
@@ -27,7 +48,10 @@ body {
     margin: auto;
 }
 
-/* ===== HEADER ===== */
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
 header {
     background: white;
     padding: 15px 0;
@@ -56,15 +80,18 @@ nav a:hover {
     color: var(--primary);
 }
 
-/* ===== HERO SECTION ===== */
+/* ============================= */
+/* HERO */
+/* ============================= */
+
 .hero {
     background: var(--gray);
-    padding: 80px 0;
+    padding: 100px 0;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     margin-bottom: 20px;
 }
 
@@ -73,65 +100,40 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-/* ===== BUTTON ===== */
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
 .btn {
     display: inline-block;
     background: var(--primary);
     color: white;
     padding: 12px 25px;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background: #155a92;
+    background: var(--primary-dark);
 }
 
-/* ===== MAIN CONTENT ===== */
-main {
-    padding: 60px 0;
-}
+/* ============================= */
+/* FOOTER */
+/* ============================= */
 
-main h1 {
-    margin-bottom: 20px;
-}
-
-main h2 {
-    margin-top: 30px;
-    color: var(--primary);
-}
-
-/* ===== FOOTER ===== */
 footer {
     background: var(--dark);
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 60px;
     font-size: 0.9rem;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-    nav a {
-        margin: 0 10px;
-    }
-
-    .hero h1 {
-        font-size: 1.6rem;
-    }
-}
-/* ===== SERVICES CARDS ===== */
+/* ============================= */
+/* HOME CARDS */
+/* ============================= */
 
 .services-preview {
     padding: 80px 0;
@@ -167,7 +169,9 @@ footer {
     margin-bottom: 15px;
 }
 
-/* ===== ZONE ===== */
+/* ============================= */
+/* ZONE SECTION */
+/* ============================= */
 
 .zone {
     background: var(--primary);
@@ -175,24 +179,13 @@ footer {
     padding: 60px 0;
     text-align: center;
 }
-/* ===== FOOTER FIX ===== */
 
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1;
-}
-/* ===== TARIFS ===== */
+/* ============================= */
+/* TARIFS */
+/* ============================= */
 
 .tarif-box {
-    background: #f5f5f5;
+    background: var(--gray);
     padding: 40px;
     margin-bottom: 40px;
     border-radius: 8px;
@@ -207,4 +200,89 @@ main {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+/* ============================= */
+/* SERVICES PAGE */
+/* ============================= */
+
+.service-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 0;
+}
+
+.service-text {
+    flex: 1;
+}
+
+.service-text h1 {
+    margin-bottom: 20px;
+}
+
+.service-text h2 {
+    margin-top: 30px;
+    color: var(--primary);
+}
+
+.service-text ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.service-image {
+    flex: 1;
+}
+
+.service-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.service-block {
+    padding: 60px 0;
+}
+
+.service-block h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.service-block ul {
+    padding-left: 20px;
+}
+
+.service-final {
+    background: var(--gray);
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    header .container {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .service-section {
+        flex-direction: column;
+    }
+
 }
