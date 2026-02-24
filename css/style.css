@@ -286,3 +286,90 @@ footer {
     }
 
 }
+
+/* ============================= */
+/* SERVICES NEW DESIGN */
+/* ============================= */
+
+.services-hero {
+    background: #f9fbfd;
+    padding: 80px 0;
+}
+
+.services-hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.services-hero-text {
+    flex: 1;
+}
+
+.services-hero-text h1 {
+    margin-bottom: 20px;
+}
+
+.small-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.services-hero-image {
+    flex: 1;
+}
+
+.services-hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* GRID SERVICES */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.service-card h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.service-card ul {
+    padding-left: 20px;
+}
+
+/* EXTRA SECTION */
+
+.services-extra {
+    background: var(--primary);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .services-hero-inner {
+        flex-direction: column;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
