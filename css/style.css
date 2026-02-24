@@ -48,12 +48,12 @@ main {
 }
 
 /* ============================= */
-/* HEADER MODERNE */
+/* HEADER VERSION PLUS IMPACTANTE */
 /* ============================= */
 
 header {
     background: white;
-    padding: 18px 0;
+    padding: 28px 0;
     border-bottom: 1px solid #eaeaea;
     position: sticky;
     top: 0;
@@ -69,12 +69,12 @@ header .container {
 /* LOGO */
 
 .logo {
-    height: 85px;
-    transition: 0.3s;
+    height: 120px;   /* ← on double quasiment */
+    transition: 0.3s ease;
 }
 
 .logo:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 /* NAVIGATION */
@@ -82,17 +82,17 @@ header .container {
 nav {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
 nav a {
     text-decoration: none;
     color: var(--dark);
     font-weight: 600;
-    font-size: 1rem;
-    padding: 10px 18px;
-    border-radius: 8px;
-    transition: 0.3s;
+    font-size: 1.2rem;   /* ← plus grand */
+    padding: 12px 22px;
+    border-radius: 10px;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
