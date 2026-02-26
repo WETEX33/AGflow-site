@@ -48,7 +48,7 @@ main {
 }
 
 /* ============================= */
-/* HEADER OPTIMISÉ */
+/* HEADER ALIGNEMENT PROPRE */
 /* ============================= */
 
 header {
@@ -59,23 +59,18 @@ header {
     z-index: 1000;
 }
 
-/* Conteneur plus compact */
 header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 110px;   /* ← Hauteur contrôlée ici */
+    align-items: center;   /* ← centrage vertical propre */
+    padding: 15px 0;       /* ← plus de height fixe */
 }
 
-/* LOGO plus grand mais contenu dans la hauteur */
+/* LOGO */
+
 .logo {
-    height: 80px;   /* ← plus grand */
-    transform: translateY(10px); /* ajuste visuellement sans agrandir la bande */
-    transition: 0.3s ease;
-}
-
-.logo:hover {
-    transform: translateY(10px) scale(1.05);
+    height: 90px;          /* adapte si besoin */
+    display: block;
 }
 
 /* NAVIGATION */
@@ -90,8 +85,8 @@ nav a {
     text-decoration: none;
     color: var(--dark);
     font-weight: 600;
-    font-size: 1.25rem;   /* encore un peu plus lisible */
-    padding: 8px 16px;    /* réduit le padding vertical */
+    font-size: 1.2rem;
+    padding: 8px 16px;
     border-radius: 8px;
     transition: 0.3s ease;
 }
