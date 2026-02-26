@@ -24,11 +24,21 @@
 /* GLOBAL */
 /* ===================================== */
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--gray);
     color: var(--dark);
     line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .container {
@@ -39,19 +49,6 @@ body {
 
 section {
     padding: 100px 0;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1;
 }
 
 /* ===================================== */
@@ -123,32 +120,43 @@ nav a:hover {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .hero-text h1 {
     font-size: 4.2rem;
     font-weight: 700;
+    line-height: 1.2;
     margin-bottom: 35px;
+}
+
+.hero-location {
+    display: block;
+    font-size: 3.2rem;
 }
 
 .hero-text p {
     font-size: 1.5rem;
     max-width: 900px;
-    margin: 0 auto 45px;
+    margin: 0 auto 50px;
 }
+
+/* Points */
 
 .hero-points {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .hero-points span {
+    background: rgba(255,255,255,0.15);
+    padding: 14px 24px;
+    border-radius: 8px;
     font-size: 1.1rem;
-    padding: 14px 22px;
+    font-weight: 500;
 }
 
 /* ===================================== */
@@ -156,8 +164,15 @@ nav a:hover {
 /* ===================================== */
 
 .btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 20px 60px;
+    border-radius: 8px;
+    text-decoration: none;
     font-size: 1.3rem;
-    padding: 22px 60px;
+    font-weight: bold;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
@@ -172,12 +187,9 @@ nav a:hover {
     text-align: center;
 }
 
-.card h3 {
-    font-size: 1.3rem;
-}
-
-.card p {
-    font-size: 1.05rem;
+.home-services h2 {
+    font-size: 2.3rem;
+    margin-bottom: 60px;
 }
 
 .cards {
@@ -189,9 +201,9 @@ nav a:hover {
 
 .card {
     background: white;
-    padding: 40px;
+    padding: 50px;
     border-radius: 12px;
-    width: 300px;
+    width: 320px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     transition: 0.3s;
 }
@@ -201,14 +213,19 @@ nav a:hover {
 }
 
 .card h3 {
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.1rem;
 }
 
 /* TARIF */
 
 .tarif-home {
-    margin-top: 60px;
-    font-size: 1.5rem;
+    margin-top: 70px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: var(--primary);
 }
@@ -216,10 +233,6 @@ nav a:hover {
 /* ===================================== */
 /* PAGE SERVICES */
 /* ===================================== */
-
-.services-hero {
-    text-align: center;
-}
 
 .services-grid {
     display: grid;
@@ -288,15 +301,6 @@ nav a:hover {
     flex: 1;
 }
 
-.pedagogie-text {
-    flex: 1.2;
-}
-
-.pedagogie-text p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
 .pedagogie-image img {
     width: 100%;
     max-height: 420px;
@@ -304,13 +308,19 @@ nav a:hover {
     border-radius: 12px;
 }
 
+.pedagogie-text {
+    flex: 1.2;
+}
+
 .pedagogie-text h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 25px;
 }
 
 .pedagogie-text p {
-    margin-bottom: 15px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
 }
 
 /* ===================================== */
@@ -324,8 +334,8 @@ nav a:hover {
 }
 
 .home-zone h2 {
-    margin-bottom: 15px;
     font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 /* ===================================== */
@@ -355,7 +365,7 @@ footer {
     }
 
     .hero-text h1 {
-        font-size: 2.4rem;
+        font-size: 2.6rem;
     }
 
 }
