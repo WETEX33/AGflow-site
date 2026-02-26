@@ -76,6 +76,7 @@ header .container {
 
 .logo:hover {
     transform: scale(1.08);
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
 }
 
 /* NAVIGATION */
@@ -303,4 +304,123 @@ footer {
         font-size: 2rem;
     }
 
+}
+
+/* ============================= */
+/* HERO HOME */
+/* ============================= */
+
+.hero-home {
+    background: url("../images/bureau.png") center/cover no-repeat;
+    padding: 140px 0;
+    color: white;
+    position: relative;
+}
+
+.hero-home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero-points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+
+/* ============================= */
+/* HOME SERVICES */
+/* ============================= */
+
+.home-services {
+    padding: 100px 0;
+    background: #f8f9fb;
+    text-align: center;
+}
+
+.home-services h2 {
+    margin-bottom: 50px;
+}
+
+.tarif-home {
+    margin-top: 40px;
+    font-size: 1.1rem;
+}
+
+
+/* ============================= */
+/* PEDAGOGIE */
+/* ============================= */
+
+.home-pedagogie {
+    padding: 100px 0;
+}
+
+.pedagogie-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.pedagogie-image {
+    flex: 1;
+}
+
+.pedagogie-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.pedagogie-text {
+    flex: 1;
+}
+
+.pedagogie-text h2 {
+    margin-bottom: 20px;
+}
+
+
+/* ============================= */
+/* ZONE */
+/* ============================= */
+
+.home-zone {
+    padding: 80px 0;
+    background: var(--primary);
+    color: white;
+    text-align: center;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .pedagogie-content {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
 }
