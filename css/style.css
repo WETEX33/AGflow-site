@@ -69,8 +69,13 @@ header .container {
 /* LOGO */
 
 .logo {
-    height: 90px;          /* adapte si besoin */
+    height: 90px;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.08);
 }
 
 /* NAVIGATION */
