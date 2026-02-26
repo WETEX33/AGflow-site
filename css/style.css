@@ -25,12 +25,12 @@
 /* ===================================== */
 
 html, body {
-    height: 90%;
+    height: 100%;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--gray);
+    background: #eef2f7;
     color: var(--dark);
     line-height: 1.7;
     display: flex;
@@ -356,23 +356,271 @@ nav a:hover {
 /* PAGE TARIFS */
 /* ===================================== */
 
-.tarif-box {
-    background: white;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    margin-bottom: 50px;
+/* HERO TARIFS */
+
+.tarifs-main {
+    padding: 40px 0 20px;
 }
 
-.tarif-box h2 {
-    color: var(--primary);
+.tarifs-hero {
+    text-align: center;
+    padding: 120px 0 80px;
+    background: linear-gradient(to bottom, #f4f7fa 0%, #ffffff 100%);
+}
+
+/* Ligne décorative plus large et plus élégante */
+
+.tarifs-hero h1 {
+    position: relative;
+    font-size: 3.2rem; /* on force la vraie taille */
     margin-bottom: 20px;
 }
 
+/* Ligne décorative */
+.tarifs-hero h1::after {
+    content: "";
+    display: block;
+    width: 500px;      /* largeur fixe élégante */
+    max-width: 80%;    /* responsive */
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+    margin: 25px auto 0;
+    border-radius: 3px;
+}
+
+.tarifs-hero p {
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+
+/* ZONE PRINCIPALE TARIFS */
+
+.tarif-box {
+    background: white;
+    padding: 60px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    max-width: 850px;
+    margin: 0 auto 60px;
+    transition: 0.3s ease;
+}
+
+.tarif-box:hover {
+    transform: translateY(-5px);
+}
+
+/* TITRES TARIFS */
+
+.tarif-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: var(--dark);
+}
+
+/* PRIX */
+
 .price {
-    font-size: 2.2rem;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primary);
     margin-bottom: 15px;
+}
+
+.price span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.sub-price {
+    font-size: 1.1rem;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.tarif-note {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+/* TEXTE DÉPLACEMENT */
+
+.tarif-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* CTA TARIFS */
+
+.tarifs-extra {
+    background: linear-gradient(135deg, #1f6fb2, #155a92);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+
+.tarifs-extra h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.tarifs-extra p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+.tarifs-extra .btn {
+    background: white;
+    color: var(--primary);
+    padding: 24px 70px;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.tarifs-extra .btn:hover {
+    background: #f0f4f8;
+    transform: translateY(-3px);
+}
+
+/* ========================= */
+/* HERO A Propos */
+/* ========================= */
+
+.about-hero {
+    position: relative;
+    height: 75vh;
+    background: url("../images/portable.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* ========================= */
+/* SECTIONS */
+/* ========================= */
+
+.about-section {
+    padding: 120px 0;
+}
+
+.about-grid {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-grid.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* ========================= */
+/* VALEURS */
+/* ========================= */
+
+.about-values {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.values-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.value-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    width: 280px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ========================= */
+/* ANIMATIONS PREMIUM */
+/* ========================= */
+
+.reveal-left,
+.reveal-right,
+.reveal-up {
+    opacity: 0;
+    transition: 0.9s ease;
+}
+
+.reveal-left {
+    transform: translateX(-80px);
+}
+
+.reveal-right {
+    transform: translateX(80px);
+}
+
+.reveal-up {
+    transform: translateY(60px);
+}
+
+.reveal-left.active,
+.reveal-right.active,
+.reveal-up.active {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
 }
 
 /* ===================================== */
@@ -440,6 +688,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 0.9rem;
+    margin-top: 0;   /* important */
 }
 
 /* ===================================== */
@@ -465,5 +714,26 @@ footer {
         text-align: center;
         gap: 50px;
     }
+	
+	.about-grid {
+    flex-direction: column;
+    gap: 40px;
+}
 
+}
+
+/* ========================= */
+/* FONDS SECTIONS A PROPOS */
+/* ========================= */
+
+.about-light {
+    background: #ffffff;
+}
+
+.about-soft {
+    background: #f8fafc;
+}
+
+.about-values {
+    background: #f1f5f9;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>À propos - AGflow</title>
-    <meta name="description" content="En savoir plus sur AGflow et son approche du support informatique.">
+    <meta name="description" content="Découvrez le parcours et la vision derrière AGflow.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,10 +22,85 @@
     </div>
 </header>
 
-<main class="container">
-    <h1>À propos</h1>
-    <p>AGflow est une entreprise locale basée à Pessac, spécialisée dans le support informatique pour particuliers et petites entreprises.</p>
-    <p>Je privilégie la proximité, l'écoute et des solutions claires adaptées à vos besoins.</p>
+<main>
+
+<!-- HERO -->
+<section class="about-hero">
+    <div class="about-hero-overlay"></div>
+    <div class="about-hero-content">
+        <h1>AGflow</h1>
+        <p>Une approche moderne de l'informatique, avec rigueur et proximité.</p>
+    </div>
+</section>
+
+<!-- QUI SUIS-JE -->
+<section class="about-section about-soft">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text reveal-left">
+                <h2>Qui suis-je ?</h2>
+                <p>
+                    Étudiant en BTS SIO en alternance, je développe mes compétences
+                    techniques au quotidien dans un environnement professionnel exigeant.
+                </p>
+                <p>
+                    AGflow est né d’une volonté simple : proposer un service informatique
+                    fiable, clair et accessible, basé sur la rigueur et la pédagogie.
+                </p>
+            </div>
+            <div class="about-image reveal-right">
+                <img src="images/portable2.png" alt="Ordinateur portable moderne">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PARCOURS -->
+<section class="about-section about-light">
+    <div class="container">
+        <div class="about-grid reverse">
+            <div class="about-text reveal-right">
+                <h2>Mon parcours</h2>
+                <p>
+                    Titulaire d’un bac STI2D, j’ai poursuivi mes études en BTS SIO
+                    afin de me spécialiser dans l’informatique.
+                </p>
+                <p>
+                    Mon alternance me permet de combiner théorie et pratique,
+                    en travaillant sur des problématiques réelles chaque semaine.
+                </p>
+            </div>
+            <div class="about-image reveal-left">
+                <img src="images/clavier.png" alt="Clavier rétroéclairé">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VALEURS -->
+<section class="about-values">
+    <div class="container">
+        <h2 class="reveal-up">Mes valeurs</h2>
+
+        <div class="values-grid">
+            <div class="value-card reveal-up">
+                <h3>Proximité</h3>
+                <p>Un accompagnement clair et humain, sans jargon inutile.</p>
+            </div>
+
+            <div class="value-card reveal-up">
+                <h3>Rigueur</h3>
+                <p>Des interventions méthodiques et structurées.</p>
+            </div>
+
+            <div class="value-card reveal-up">
+                <h3>Évolution</h3>
+                <p>Une volonté constante d’améliorer mes compétences.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 </main>
 
 <footer>
@@ -33,6 +108,23 @@
         <p>© 2026 AGflow - Pessac, Gironde</p>
     </div>
 </footer>
+
+<script>
+const reveals = document.querySelectorAll(
+    ".reveal-left, .reveal-right, .reveal-up"
+);
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+reveals.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
