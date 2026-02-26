@@ -42,8 +42,8 @@ main {
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 92%;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -124,21 +124,24 @@ nav a:hover {
 }
 
 .hero-text h1 {
-    font-size: 4.2rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 35px;
+    font-size: 5.2rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 10px;
 }
 
 .hero-location {
     display: block;
-    font-size: 3.2rem;
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: #d6e9ff;
+    margin-top: 15px;
 }
 
 .hero-text p {
-    font-size: 1.5rem;
-    max-width: 900px;
-    margin: 0 auto 50px;
+    font-size: 1.8rem;
+    max-width: 1100px;
+    margin: 25px auto 60px;
 }
 
 /* Points */
@@ -152,10 +155,10 @@ nav a:hover {
 }
 
 .hero-points span {
-    background: rgba(255,255,255,0.15);
-    padding: 14px 24px;
-    border-radius: 8px;
-    font-size: 1.1rem;
+    background: rgba(255,255,255,0.18);
+    padding: 18px 30px;
+    border-radius: 10px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -167,10 +170,10 @@ nav a:hover {
     display: inline-block;
     background: var(--primary);
     color: white;
-    padding: 20px 60px;
-    border-radius: 8px;
+    padding: 26px 80px;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     transition: 0.3s ease;
 }
