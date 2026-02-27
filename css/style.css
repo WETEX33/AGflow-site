@@ -24,6 +24,10 @@
 /* GLOBAL */
 /* ===================================== */
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
 }
@@ -525,6 +529,178 @@ nav a:hover {
 }
 
 /* ========================= */
+/* HERO CONTACT */
+/* ========================= */
+
+.contact-hero {
+    position: relative;
+    height: 73vh;
+    overflow: hidden;
+}
+
+.contact-hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 75%;
+}
+
+.contact-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.contact-hero-content {
+    position: relative;
+    z-index: 2;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    font-size: 5rem;
+}
+
+.contact-hero p {
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+/* ========================= */
+/* CONTACT PAGE */
+/* ========================= */
+
+.contact-section {
+    padding: 100px 0;
+}
+
+.contact-grid {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+#contact-infos {
+    scroll-margin-top: 210px;
+}
+
+.contact-info h2 {
+    margin-bottom: 30px;
+	font-size: 2.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.contact-info a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-map {
+    flex: 1;
+}
+
+.contact-hours {
+    padding: 120px 0;
+    background: url("../images/contact2.png") center/cover no-repeat;
+    position: relative;
+    color: white;
+}
+
+.contact-hours::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.contact-hours .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hours-grid {
+    max-width: 500px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    font-size: 1.1rem;
+}
+
+.contact-social {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links a {
+    padding: 12px 30px;
+    border-radius: 8px;
+    background: white;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .contact-grid {
+        flex-direction: column;
+    }
+}
+
+.about-cta .btn {
+    background: white;
+    color: var(--primary);
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.about-cta .btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    background: #f5f9ff;
+}
+
+.about-cta .cta-text {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/* ========================= */
 /* SECTIONS */
 /* ========================= */
 
@@ -564,6 +740,10 @@ nav a:hover {
     width: 100%;
     border-radius: 16px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+section.contact-hero {
+    padding: 0;
 }
 
 /* ========================= */
