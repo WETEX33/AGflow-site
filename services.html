@@ -2,16 +2,35 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Services - AGflow</title>
-    <meta name="description" content="Services de dépannage et assistance informatique à Pessac et alentours.">
+    <title>Services - AGflow, support informatique à Pessac</title>
+    <meta name="description" content="Services de dépannage, installation, réseau et assistance informatique à Pessac et alentours. Interventions à domicile, tarifs clairs, technicien local.">
+    <meta name="keywords" content="services informatiques Pessac, dépannage PC, installation Windows, configuration Wi-Fi, assistance smartphone Gironde">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f6fb2">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Services - AGflow">
+    <meta property="og:description" content="Dépannage, installation, réseau et accompagnement informatique à domicile.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:locale" content="fr_FR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon_centered.ico" type="image/x-icon">
 </head>
 <body>
 
 <header>
     <div class="container">
-        <img src="images/logo.png" alt="Logo AGflow" class="logo">
+        <a href="index.html" aria-label="Accueil AGflow">
+            <img src="images/logo.png" alt="Logo AGflow" class="logo">
+        </a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
         <nav>
             <a href="index.html">Accueil</a>
             <a href="services.html">Services</a>
@@ -26,51 +45,60 @@
 
 <section class="services-hero">
     <div class="container services-hero-inner">
-        <div class="services-hero-text">
-			<h1>Les services que je propose</h1>
+        <div class="services-hero-text reveal-left">
+            <span class="section-eyebrow">Mes prestations</span>
+            <h1>Les services que je propose</h1>
             <p>Interventions à Pessac et alentours pour vous accompagner simplement et efficacement, avec des solutions claires et adaptées à vos besoins.</p>
-            <p class="small-note">Interventions possibles en soirée et week-end selon disponibilité.</p>
+            <p class="small-note">✔ Soirée et week-end possibles</p>
         </div>
-        <div class="services-hero-image">
-            <img src="images/services1.png" alt="Réparation ordinateur">
+        <div class="services-hero-image reveal-right">
+            <img src="images/services1.png" alt="Réparation et assistance informatique">
         </div>
     </div>
 </section>
 
 <section class="services-grid container">
 
-    <div class="service-card">
-        <h2>🖥️ Dépannage & réparation</h2>
+    <div class="service-card reveal-up">
+        <div class="service-icon">🖥️</div>
+        <h2>Dépannage & réparation</h2>
+        <p class="service-sub">Remettre votre matériel en état de marche, durablement.</p>
         <ul>
             <li>Réparation PC (Windows, Linux, Mac)</li>
             <li>Remplacement de pièces</li>
-            <li>Suppression de virus</li>
+            <li>Suppression de virus et malwares</li>
             <li>Optimisation et nettoyage</li>
         </ul>
     </div>
 
-    <div class="service-card">
-        <h2>⚙️ Installation & configuration</h2>
+    <div class="service-card reveal-up">
+        <div class="service-icon">⚙️</div>
+        <h2>Installation & configuration</h2>
+        <p class="service-sub">Un environnement prêt à l'emploi, adapté à vos usages.</p>
         <ul>
             <li>Installation Windows / Linux</li>
-            <li>Installation logiciels</li>
-            <li>Montage PC</li>
+            <li>Installation et mise à jour logiciels</li>
+            <li>Montage et configuration PC</li>
             <li>Configuration périphériques</li>
         </ul>
     </div>
 
-    <div class="service-card">
-        <h2>🌐 Réseau & internet</h2>
+    <div class="service-card reveal-up">
+        <div class="service-icon">🌐</div>
+        <h2>Réseau & internet</h2>
+        <p class="service-sub">Une connexion stable, partout chez vous.</p>
         <ul>
             <li>Installation box internet</li>
-            <li>Configuration Wi-Fi</li>
+            <li>Configuration Wi-Fi et répéteurs</li>
             <li>Réseau domestique</li>
-            <li>Résolution problèmes connexion</li>
+            <li>Résolution problèmes de connexion</li>
         </ul>
     </div>
 
-    <div class="service-card">
-        <h2>📱 Assistance & accompagnement</h2>
+    <div class="service-card reveal-up">
+        <div class="service-icon">📱</div>
+        <h2>Assistance & accompagnement</h2>
+        <p class="service-sub">Un accompagnement clair, à votre rythme.</p>
         <ul>
             <li>Aide smartphones & tablettes</li>
             <li>Conseils personnalisés</li>
@@ -81,10 +109,37 @@
 
 </section>
 
+<!-- PROCESSUS -->
+<section class="services-process">
+    <div class="container">
+        <span class="section-eyebrow">Comment ça se passe</span>
+        <h2 class="section-title">Une intervention en 3 étapes</h2>
+        <p class="section-lead">Du premier contact à la résolution, un déroulé simple et transparent.</p>
+
+        <div class="process-grid">
+            <div class="process-step reveal-up">
+                <div class="process-num">1</div>
+                <h3>Prise de contact</h3>
+                <p>Vous m'expliquez votre besoin par téléphone ou par email. Je pose les bonnes questions pour cerner le problème.</p>
+            </div>
+            <div class="process-step reveal-up">
+                <div class="process-num">2</div>
+                <h3>Intervention à domicile</h3>
+                <p>Rendez-vous fixé à un créneau qui vous arrange, y compris en soirée. Diagnostic précis et résolution sur place.</p>
+            </div>
+            <div class="process-step reveal-up">
+                <div class="process-num">3</div>
+                <h3>Suivi et conseils</h3>
+                <p>Je vous explique ce qui a été fait, partage quelques conseils utiles et reste joignable en cas de question.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="services-extra">
     <div class="container">
-        <h2>Un autre problème ?</h2>
-        <p>Si vous avez un autre problème informatique, contactez-moi pour qu’on en discute ensemble.</p>
+        <h2>Un autre besoin ?</h2>
+        <p>Si vous avez un autre problème informatique, contactez-moi pour qu'on en discute ensemble.</p>
         <a href="contact.html" class="btn">Me contacter</a>
     </div>
 </section>
@@ -92,24 +147,22 @@
 </main>
 
 <footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">AGflow</div>
+        <div class="footer-links">
+            <a class="footer-btn" href="politique-confidentialite.html">Politique de confidentialité</a>
+            <a class="footer-btn" href="mentions-legales.html">Mentions légales</a>
+        </div>
+        <p class="footer-copy">© <span class="footer-year">2026</span> AGflow — Pessac, Gironde</p>
+    </div>
+</footer>
 
-<div class="footer-links">
-
-<a class="footer-btn" href="politique-confidentialite.html">
-Politique de confidentialité
-</a>
-
-<a class="footer-btn" href="mentions-legales.html">
-Mentions légales
-</a>
-
+<div class="float-actions">
+    <a href="tel:0752022931" class="float-btn" aria-label="Appeler AGflow" title="Appeler">📞</a>
+    <button class="float-btn back-to-top" aria-label="Retour en haut" title="Haut de page">↑</button>
 </div>
 
-<p class="footer-copy">
-© 2026 AGFlow - Pessac, Gironde
-</p>
-
-</footer>
+<script src="assets/main.js" defer></script>
 
 </body>
 </html>

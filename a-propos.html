@@ -2,16 +2,35 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>À propos - AGflow</title>
-    <meta name="description" content="Découvrez le parcours et la vision derrière AGflow.">
+    <title>À propos - AGflow, technicien informatique à Pessac</title>
+    <meta name="description" content="Découvrez AGflow : une approche moderne, rigoureuse et humaine du support informatique à domicile à Pessac et alentours.">
+    <meta name="keywords" content="technicien informatique Pessac, AGflow à propos, assistance informatique Gironde, approche pédagogique">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f6fb2">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="À propos - AGflow">
+    <meta property="og:description" content="Un service informatique clair, moderne et accessible à Pessac.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:locale" content="fr_FR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon_centered.ico" type="image/x-icon">
 </head>
 <body>
 
 <header>
     <div class="container">
-        <img src="images/logo.png" alt="Logo AGflow" class="logo">
+        <a href="index.html" aria-label="Accueil AGflow">
+            <img src="images/logo.png" alt="Logo AGflow" class="logo">
+        </a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
         <nav>
             <a href="index.html">Accueil</a>
             <a href="services.html">Services</a>
@@ -26,10 +45,9 @@
 
 <!-- HERO -->
 <section class="about-hero">
-    <div class="about-hero-overlay"></div>
     <div class="about-hero-content">
         <h1>AGflow</h1>
-		<p>Un service informatique clair, moderne et accessible.</p>
+        <p>Un service informatique clair, moderne et accessible.</p>
     </div>
 </section>
 
@@ -38,19 +56,20 @@
     <div class="container">
         <div class="about-grid">
             <div class="about-text reveal-left">
+                <span class="section-eyebrow">Approche</span>
                 <h2>Une approche moderne</h2>
-				<p>
-					AGflow privilégie une approche efficace et structurée :
-					comprendre le problème, intervenir avec méthode
-					et assurer un résultat fiable.
-				</p>
-				<p>
-					L’objectif n’est pas seulement de réparer, mais d’accompagner et de sécuriser
-					durablement votre matériel.
-				</p>
+                <p>
+                    AGflow privilégie une approche efficace et structurée :
+                    comprendre le problème, intervenir avec méthode
+                    et assurer un résultat fiable.
+                </p>
+                <p>
+                    L'objectif n'est pas seulement de réparer, mais d'accompagner et de sécuriser
+                    durablement votre matériel.
+                </p>
             </div>
             <div class="about-image reveal-right">
-                <img src="images/portable2.png" alt="Ordinateur portable moderne">
+                <img src="images/portable2.png" alt="Ordinateur portable moderne sur un bureau">
             </div>
         </div>
     </div>
@@ -61,18 +80,19 @@
     <div class="container">
         <div class="about-grid reverse">
             <div class="about-text reveal-right">
+                <span class="section-eyebrow">Méthode</span>
                 <h2>Ma manière de travailler</h2>
-				<p>
-					Chaque demande commence par un diagnostic précis.
-					Identifier la cause réelle du problème permet d’éviter les solutions temporaires.
-				</p>
-				<p>
-					Les interventions sont structurées, méthodiques et orientées vers
-					des résultats fiables sur le long terme.
-				</p>
+                <p>
+                    Chaque demande commence par un diagnostic précis.
+                    Identifier la cause réelle du problème permet d'éviter les solutions temporaires.
+                </p>
+                <p>
+                    Les interventions sont structurées, méthodiques et orientées vers
+                    des résultats fiables sur le long terme.
+                </p>
             </div>
             <div class="about-image reveal-left">
-                <img src="images/clavier.png" alt="Clavier rétroéclairé">
+                <img src="images/clavier.png" alt="Clavier d'ordinateur rétroéclairé">
             </div>
         </div>
     </div>
@@ -81,22 +101,23 @@
 <!-- VALEURS -->
 <section class="about-values">
     <div class="container">
+        <span class="section-eyebrow">Valeurs</span>
         <h2 class="reveal-up">Un engagement clair</h2>
 
         <div class="values-grid">
             <div class="value-card reveal-up">
-                <h3>Proximité</h3>
+                <h3>🤝 Proximité</h3>
                 <p>Un accompagnement clair et humain, sans jargon inutile.</p>
             </div>
 
             <div class="value-card reveal-up">
-                <h3>Rigueur</h3>
-                <p>Des interventions méthodiques et structurées.</p>
+                <h3>🎯 Rigueur</h3>
+                <p>Des interventions méthodiques et structurées pour des résultats durables.</p>
             </div>
 
             <div class="value-card reveal-up">
-                <h3>Évolution</h3>
-                <p>Une volonté constante d’améliorer mes compétences.</p>
+                <h3>📈 Évolution</h3>
+                <p>Une volonté constante d'améliorer mes compétences et pratiques.</p>
             </div>
         </div>
     </div>
@@ -106,52 +127,34 @@
 
 <section class="about-cta">
     <div class="container">
-        <div class="about-text reveal-up" style="text-align:center; max-width:800px; margin:auto;">
+        <div class="about-text reveal-up" style="text-align:center; max-width:780px; margin:auto;">
             <p>
-            AGflow est un projet indépendant porté par un technicien passionné,
-            formé aux dernières technologies et engagé dans une amélioration constante
-            de ses compétences.
+                AGflow est un projet indépendant porté par un technicien passionné,
+                formé aux dernières technologies et engagé dans une amélioration constante
+                de ses compétences.
             </p>
+            <a href="contact.html" class="btn">Me contacter</a>
         </div>
     </div>
 </section>
 
 <footer class="site-footer">
-
-<div class="footer-links">
-
-<a class="footer-btn" href="politique-confidentialite.html">
-Politique de confidentialité
-</a>
-
-<a class="footer-btn" href="mentions-legales.html">
-Mentions légales
-</a>
-
-</div>
-
-<p class="footer-copy">
-© 2026 AGFlow - Pessac, Gironde
-</p>
-
+    <div class="footer-inner">
+        <div class="footer-brand">AGflow</div>
+        <div class="footer-links">
+            <a class="footer-btn" href="politique-confidentialite.html">Politique de confidentialité</a>
+            <a class="footer-btn" href="mentions-legales.html">Mentions légales</a>
+        </div>
+        <p class="footer-copy">© <span class="footer-year">2026</span> AGflow — Pessac, Gironde</p>
+    </div>
 </footer>
 
-<script>
-const reveals = document.querySelectorAll(
-    ".reveal-left, .reveal-right, .reveal-up"
-);
+<div class="float-actions">
+    <a href="tel:0752022931" class="float-btn" aria-label="Appeler AGflow" title="Appeler">📞</a>
+    <button class="float-btn back-to-top" aria-label="Retour en haut" title="Haut de page">↑</button>
+</div>
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("active");
-            observer.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.15 });
-
-reveals.forEach(el => observer.observe(el));
-</script>
+<script src="assets/main.js" defer></script>
 
 </body>
 </html>

@@ -2,17 +2,36 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Tarifs - AGflow</title>
-    <meta name="description" content="Tarifs simples et transparents pour toute intervention informatique à Pessac et alentours.">
+    <title>Tarifs - AGflow, dépannage informatique à Pessac</title>
+    <meta name="description" content="Tarifs simples et transparents : 50€/heure (25€/demi-heure). Déplacement inclus dans un rayon de 20 km autour de Pessac.">
+    <meta name="keywords" content="tarif informatique Pessac, prix dépannage ordinateur, tarif assistance informatique Gironde">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f6fb2">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tarifs - AGflow">
+    <meta property="og:description" content="Des tarifs simples et transparents pour toute intervention informatique à domicile.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:locale" content="fr_FR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon_centered.ico" type="image/x-icon">
 </head>
 
 <body>
 
 <header>
     <div class="container">
-        <img src="images/logo.png" alt="Logo AGflow" class="logo">
+        <a href="index.html" aria-label="Accueil AGflow">
+            <img src="images/logo.png" alt="Logo AGflow" class="logo">
+        </a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
         <nav>
             <a href="index.html">Accueil</a>
             <a href="services.html">Services</a>
@@ -28,7 +47,9 @@
     <!-- HERO -->
     <section class="tarifs-hero">
         <div class="container">
+            <span class="section-eyebrow">Tarifs</span>
             <h1>Des tarifs simples et transparents</h1>
+            <p>Pas de frais cachés. Vous savez à quoi vous en tenir dès le départ.</p>
         </div>
     </section>
 
@@ -37,18 +58,25 @@
         <div class="container">
 
             <!-- TARIF HORAIRE -->
-            <div class="tarif-box">
+            <div class="tarif-box reveal-up">
                 <h2>💼 Tarif horaire</h2>
                 <div class="price">50€ <span>/ heure</span></div>
-                <p class="sub-price">25€ / demi-heure</p>
+                <p class="sub-price">25€ / demi-heure entamée</p>
+                <p class="tarif-note">Facturation au temps réellement passé, arrondie à la demi-heure supérieure.</p>
             </div>
 
             <!-- DEPLACEMENT -->
-            <div class="tarif-box">
-				<h2>🚗 Déplacement</h2>
-				<p>Intervention incluse dans un rayon de 20 km autour de l’entreprise.</p>
-				<p>Au-delà de 20 km : +2€ tous les 5 km supplémentaires.</p>
-			</div>
+            <div class="tarif-box reveal-up">
+                <h2>🚗 Déplacement</h2>
+                <p><strong>Inclus</strong> dans un rayon de 20 km autour de Pessac.</p>
+                <p>Au-delà : +2€ tous les 5 km supplémentaires.</p>
+            </div>
+
+            <!-- PAIEMENT -->
+            <div class="tarif-box reveal-up">
+                <h2>💳 Paiement</h2>
+                <p>Espèces ou carte bancaire.</p>
+            </div>
 
         </div>
     </section>
@@ -58,31 +86,29 @@
         <div class="container">
             <h2>Un besoin spécifique ?</h2>
             <p>Chaque situation est différente. Contactez-moi pour obtenir une estimation adaptée à votre demande.</p>
-            <a href="contact.html" class="btn">Me contacter</a>
+            <a href="contact.html" class="btn">Demander un devis</a>
         </div>
     </section>
 
 </main>
 
 <footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">AGflow</div>
+        <div class="footer-links">
+            <a class="footer-btn" href="politique-confidentialite.html">Politique de confidentialité</a>
+            <a class="footer-btn" href="mentions-legales.html">Mentions légales</a>
+        </div>
+        <p class="footer-copy">© <span class="footer-year">2026</span> AGflow — Pessac, Gironde</p>
+    </div>
+</footer>
 
-<div class="footer-links">
-
-<a class="footer-btn" href="politique-confidentialite.html">
-Politique de confidentialité
-</a>
-
-<a class="footer-btn" href="mentions-legales.html">
-Mentions légales
-</a>
-
+<div class="float-actions">
+    <a href="tel:0752022931" class="float-btn" aria-label="Appeler AGflow" title="Appeler">📞</a>
+    <button class="float-btn back-to-top" aria-label="Retour en haut" title="Haut de page">↑</button>
 </div>
 
-<p class="footer-copy">
-© 2026 AGFlow - Pessac, Gironde
-</p>
-
-</footer>
+<script src="assets/main.js" defer></script>
 
 </body>
 </html>

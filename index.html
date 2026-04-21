@@ -2,17 +2,84 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>AGflow - Support informatique à Pessac et alentours</title>
-    <meta name="description" content="Support informatique à domicile à Pessac et alentours. Dépannage, assistance, réseau et accompagnement personnalisé.">
+    <title>AGflow - Support informatique à domicile à Pessac et alentours</title>
+    <meta name="description" content="AGflow : dépannage et assistance informatique à domicile à Pessac (Gironde) et alentours. Réparation PC, Wi-Fi, smartphones. Tarif : 50€/h. Devis rapide.">
+    <meta name="keywords" content="dépannage informatique Pessac, assistance informatique domicile, réparation PC Pessac, informatique Gironde, AGflow, technicien informatique Pessac">
+    <meta name="author" content="AGflow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f6fb2">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AGflow - Support informatique à Pessac">
+    <meta property="og:description" content="Dépannage et assistance informatique à domicile à Pessac. Un accompagnement pédagogique, clair et fiable.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AGflow - Support informatique à Pessac">
+    <meta name="twitter:description" content="Dépannage et assistance informatique à domicile à Pessac et alentours.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="favicon_centered.ico" type="image/x-icon">
+    <link rel="icon" href="favicon_centered.ico" type="image/x-icon">
+
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "AGflow",
+      "description": "Support informatique à domicile à Pessac et alentours. Dépannage PC, réseau, smartphones.",
+      "image": "images/logo.png",
+      "url": "https://agflow.fr",
+      "telephone": "+33752022931",
+      "email": "contact@agflow.fr",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pessac",
+        "postalCode": "33600",
+        "addressRegion": "Gironde",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.800424,
+        "longitude": -0.619991
+      },
+      "areaServed": "Pessac et alentours",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "16:00"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
 <header>
     <div class="container">
-        <img src="images/logo.png" alt="Logo AGflow" class="logo">
+        <a href="index.html" aria-label="Accueil AGflow">
+            <img src="images/logo.png" alt="Logo AGflow" class="logo">
+        </a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
         <nav>
             <a href="index.html">Accueil</a>
             <a href="services.html">Services</a>
@@ -27,45 +94,57 @@
 
 <section class="hero-home">
     <div class="container hero-content">
+        <span class="hero-badge">
+            <span class="dot"></span>
+            Disponible à Pessac et alentours
+        </span>
         <div class="hero-text">
             <h1>
-				Support informatique à domicile<br>
-				<span class="hero-location">Pessac et alentours</span>
-			</h1>
+                Support informatique à domicile
+                <span class="hero-location">Pessac et alentours</span>
+            </h1>
 
             <p>
-                Un accompagnement professionnel et pédagogique
-                pour vous aider sereinement avec votre informatique.
+                Un accompagnement professionnel et pédagogique pour vous aider sereinement
+                avec votre informatique, du simple dépannage à l'installation complète.
             </p>
 
             <div class="hero-points">
                 <span>✔ Approche pédagogique</span>
-                <span>✔ Intervention possible en soirée</span>
-                <span>✔ PC, réseau, smartphones et plus</span>
+                <span>✔ Intervention en soirée</span>
+                <span>✔ PC, réseau, smartphone…</span>
             </div>
 
-            <a href="contact.html" class="btn">Me contacter</a>
+            <div class="hero-cta-group">
+                <a href="contact.html" class="btn">Me contacter</a>
+                <a href="services.html" class="btn btn-secondary">Voir les services</a>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="home-services">
     <div class="container">
+        <span class="section-eyebrow">Prestations</span>
         <h2>Les principaux services</h2>
+        <p class="section-lead">Des interventions claires et efficaces pour remettre votre informatique sur les rails.</p>
 
         <div class="cards">
-            <div class="card">
-                <h3>💻 Dépannage & réparation</h3>
+            <div class="card reveal-up">
+                <div class="card-icon">💻</div>
+                <h3>Dépannage & réparation</h3>
                 <p>Résolution de pannes, suppression de virus, optimisation et remplacement de pièces.</p>
             </div>
 
-            <div class="card">
-                <h3>🌐 Réseau & internet</h3>
+            <div class="card reveal-up">
+                <div class="card-icon">🌐</div>
+                <h3>Réseau & internet</h3>
                 <p>Installation box, configuration Wi-Fi, imprimantes et dépannage de connexion.</p>
             </div>
 
-            <div class="card">
-                <h3>📱 Assistance & accompagnement</h3>
+            <div class="card reveal-up">
+                <div class="card-icon">📱</div>
+                <h3>Assistance & accompagnement</h3>
                 <p>Aide smartphones, tablettes et conseils personnalisés adaptés à votre besoin.</p>
             </div>
         </div>
@@ -77,21 +156,22 @@
 <section class="home-pedagogie">
     <div class="container pedagogie-content">
 
-        <div class="pedagogie-image">
-            <img src="images/explication.png" alt="Accompagnement informatique">
+        <div class="pedagogie-image reveal-left">
+            <img src="images/explication.png" alt="Accompagnement informatique pédagogique à Pessac">
         </div>
 
-        <div class="pedagogie-text">
+        <div class="pedagogie-text reveal-right">
+            <span class="section-eyebrow">Ma philosophie</span>
             <h2>Un service basé sur la confiance</h2>
 
             <p>
                 Chaque intervention est réalisée avec sérieux et transparence.
-                L’objectif est de résoudre votre problème efficacement,
+                L'objectif est de résoudre votre problème efficacement,
                 sans vous laisser dans le flou.
             </p>
 
             <p>
-                Vous bénéficiez d’un accompagnement clair,
+                Vous bénéficiez d'un accompagnement clair,
                 rassurant et adapté à votre situation.
             </p>
         </div>
@@ -99,34 +179,89 @@
     </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="container">
+        <div class="faq-header">
+            <span class="section-eyebrow">Questions fréquentes</span>
+            <h2>Vos questions, mes réponses</h2>
+            <p>Quelques précisions utiles avant de me contacter.</p>
+        </div>
+
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>Quelles zones géographiques couvrez-vous ?</summary>
+                <div class="faq-answer">
+                    J'interviens principalement à Pessac et dans les communes alentours
+                    (Mérignac, Talence, Gradignan, Bordeaux sud…). Un forfait déplacement
+                    minime s'applique au-delà de 20 km.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Combien de temps dure une intervention ?</summary>
+                <div class="faq-answer">
+                    La plupart des interventions simples (installation, configuration Wi-Fi,
+                    optimisation) prennent entre 30 minutes et 1h30. Les cas plus complexes
+                    sont évalués ensemble avant tout engagement.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Sur quels appareils intervenez-vous ?</summary>
+                <div class="faq-answer">
+                    PC fixes et portables (Windows, Linux, macOS), tablettes, smartphones,
+                    box internet, imprimantes, objets connectés. Si vous avez un doute,
+                    contactez-moi : on en discute.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Quels sont les moyens de paiement acceptés ?</summary>
+                <div class="faq-answer">
+                    Paiement par espèces, chèque ou virement bancaire après intervention.
+                    Une facture vous est systématiquement remise.
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Intervenez-vous en soirée ou le week-end ?</summary>
+                <div class="faq-answer">
+                    Oui, des interventions en soirée et le samedi sont possibles selon
+                    disponibilité. N'hésitez pas à me contacter pour trouver un créneau adapté.
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
 <section class="home-zone">
     <div class="container">
-        <h2>📍 Zone d’intervention</h2>
-        <p>Déplacement à Pessac et communes alentours.</p>
+        <h2>Zone d'intervention</h2>
+        <p>Déplacement à Pessac et communes alentours (rayon de 20 km inclus).</p>
     </div>
 </section>
 
 </main>
 
 <footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">AGflow</div>
+        <div class="footer-links">
+            <a class="footer-btn" href="politique-confidentialite.html">Politique de confidentialité</a>
+            <a class="footer-btn" href="mentions-legales.html">Mentions légales</a>
+        </div>
+        <p class="footer-copy">© <span class="footer-year">2026</span> AGflow — Pessac, Gironde</p>
+    </div>
+</footer>
 
-<div class="footer-links">
-
-<a class="footer-btn" href="politique-confidentialite.html">
-Politique de confidentialité
-</a>
-
-<a class="footer-btn" href="mentions-legales.html">
-Mentions légales
-</a>
-
+<!-- Boutons flottants -->
+<div class="float-actions">
+    <a href="tel:0752022931" class="float-btn" aria-label="Appeler AGflow" title="Appeler">📞</a>
+    <button class="float-btn back-to-top" aria-label="Retour en haut" title="Haut de page">↑</button>
 </div>
 
-<p class="footer-copy">
-© 2026 AGFlow - Pessac, Gironde
-</p>
-
-</footer>
+<script src="assets/main.js" defer></script>
 
 </body>
 </html>

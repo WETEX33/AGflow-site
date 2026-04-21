@@ -2,16 +2,35 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Contact - AGflow</title>
-    <meta name="description" content="Contactez AGflow pour toute demande d'assistance informatique à Pessac.">
+    <title>Contact - AGflow, assistance informatique à Pessac</title>
+    <meta name="description" content="Contactez AGflow pour toute demande d'assistance informatique à domicile à Pessac et alentours. Téléphone, email ou formulaire.">
+    <meta name="keywords" content="contact AGflow, dépannage informatique Pessac, devis informatique, assistance rapide">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f6fb2">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact - AGflow">
+    <meta property="og:description" content="Disponible pour vous accompagner et répondre à vos besoins informatiques.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:locale" content="fr_FR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon_centered.ico" type="image/x-icon">
 </head>
 <body>
 
 <header>
     <div class="container">
-        <img src="images/logo.png" alt="Logo AGflow" class="logo">
+        <a href="index.html" aria-label="Accueil AGflow">
+            <img src="images/logo.png" alt="Logo AGflow" class="logo">
+        </a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
         <nav>
             <a href="index.html">Accueil</a>
             <a href="services.html">Services</a>
@@ -26,7 +45,7 @@
 
 <!-- HERO -->
 <section class="contact-hero">
-    <img src="images/contact.png" alt="Contact AGFlow" class="contact-hero-img">
+    <img src="images/contact.png" alt="Contact AGflow" class="contact-hero-img">
     <div class="contact-hero-overlay"></div>
 
     <div class="contact-hero-content">
@@ -39,26 +58,30 @@
 <section class="contact-section" id="contact-infos">
     <div class="container contact-grid">
 
-        <div class="contact-info">
+        <div class="contact-info reveal-left">
             <h2>Informations</h2>
 
-            <p><strong>Téléphone :</strong><br>
+            <p><strong>Téléphone</strong>
             <a href="tel:0752022931">📞 07 52 02 29 31</a></p>
 
-            <p><strong>Email :</strong><br>
-            <a href="mailto:contact@agflow.fr">🖂 Contact@agflow.fr</a></p>
+            <p><strong>Email</strong>
+            <a href="mailto:contact@agflow.fr">✉ contact@agflow.fr</a></p>
 
-            <p><strong>Zone d’intervention :</strong><br>
+            <p><strong>Zone d'intervention</strong>
             📍 Pessac et alentours</p>
+
+            <p><strong>Horaires</strong>
+            Lun-Ven : 9h-19h · Sam : 10h-16h</p>
         </div>
 
-        <div class="contact-map">
-            <iframe 
+        <div class="contact-map reveal-right">
+            <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.0375342221846!2d-0.6199907!3d44.800423699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x67f76facb389fad9%3A0x15aa3cbfc06d35bd!2sAGflow!5e0!3m2!1sfr!2sfr!4v1774297598147!5m2!1sfr!2sfr"
-                width="100%" 
-                height="350" 
-                style="border:0;" 
-                loading="lazy">
+                width="100%"
+                height="380"
+                style="border:0;"
+                loading="lazy"
+                title="Localisation AGflow à Pessac">
             </iframe>
         </div>
 
@@ -68,7 +91,7 @@
 <!-- HORAIRES -->
 <section class="contact-hours">
     <div class="container">
-        <h2 style="text-align:center;">Heures d’ouverture</h2>
+        <h2 style="text-align:center;">Heures d'ouverture</h2>
         <div class="hours-grid">
             <div>Lundi - Vendredi</div>
             <div>9h00 - 19h00</div>
@@ -84,14 +107,15 @@
 
 <!-- RÉSEAUX -->
 <section class="contact-social">
-    <div class="container" style="text-align:center;">
-        <h2>Réseaux sociaux</h2>
-        <p>Retrouvez AGflow également en ligne.</p>
+    <div class="container">
+        <span class="section-eyebrow">Réseaux</span>
+        <h2>Retrouvez AGflow en ligne</h2>
+        <p>Suivez les actualités et retours d'expérience.</p>
 
         <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61565712055262" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/agflow33/" target="_blank">Instagram</a>
-            <a href="https://maps.app.goo.gl/8KVxbq7V75E6Ukcv5" target="_blank">Google</a>
+            <a href="https://www.facebook.com/profile.php?id=61565712055262" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.instagram.com/agflow33/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://maps.app.goo.gl/8KVxbq7V75E6Ukcv5" target="_blank" rel="noopener">Google</a>
         </div>
     </div>
 </section>
@@ -100,10 +124,8 @@
 <section class="about-cta">
     <div class="container" style="text-align:center;">
         <p class="cta-text">
-        Besoin d’une assistance informatique rapide et fiable ?
-        Contactez AGflow dès maintenant.
+            Besoin d'une assistance informatique rapide et fiable ?
         </p>
-
         <a href="#contact-infos" class="btn">
             Me contacter
         </a>
@@ -113,24 +135,22 @@
 </main>
 
 <footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">AGflow</div>
+        <div class="footer-links">
+            <a class="footer-btn" href="politique-confidentialite.html">Politique de confidentialité</a>
+            <a class="footer-btn" href="mentions-legales.html">Mentions légales</a>
+        </div>
+        <p class="footer-copy">© <span class="footer-year">2026</span> AGflow — Pessac, Gironde</p>
+    </div>
+</footer>
 
-<div class="footer-links">
-
-<a class="footer-btn" href="politique-confidentialite.html">
-Politique de confidentialité
-</a>
-
-<a class="footer-btn" href="mentions-legales.html">
-Mentions légales
-</a>
-
+<div class="float-actions">
+    <a href="tel:0752022931" class="float-btn" aria-label="Appeler AGflow" title="Appeler">📞</a>
+    <button class="float-btn back-to-top" aria-label="Retour en haut" title="Haut de page">↑</button>
 </div>
 
-<p class="footer-copy">
-© 2026 AGFlow - Pessac, Gironde
-</p>
-
-</footer>
+<script src="assets/main.js" defer></script>
 
 </body>
 </html>
