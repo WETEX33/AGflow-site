@@ -168,7 +168,7 @@ nav a:hover::after {
 /* ===================================== */
 
 .hero-home {
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.7), rgba(21, 90, 146, 0.65)), url("../images/bureau.png") center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.7), rgba(21, 90, 146, 0.65)), url("../images/bureau.webp") center/cover no-repeat;
     min-height: 78vh;
     display: flex;
     align-items: center;
@@ -800,7 +800,7 @@ nav a:hover::after {
     position: relative;
     height: 55vh;
     min-height: 380px;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.7), rgba(21, 90, 146, 0.6)), url("../images/portable.png") center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.7), rgba(21, 90, 146, 0.6)), url("../images/portable.webp") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -945,7 +945,7 @@ nav a:hover::after {
 
 .contact-hours {
     padding: 100px 0;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.7), rgba(21, 90, 146, 0.65)), url("../images/contact2.png") center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.7), rgba(21, 90, 146, 0.65)), url("../images/contact2.webp") center/cover no-repeat;
     position: relative;
     color: white;
 }
@@ -1130,6 +1130,13 @@ nav a:hover::after {
     padding: 90px 0;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-cta .container {
+    width: 100%;
 }
 
 .about-cta p,
